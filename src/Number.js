@@ -6,7 +6,7 @@ export default {
   },
 
   random(minimum, maximum, rounded) {
-    const random = minimum + Math.random() * maximum
+    const random = minimum + Math.random() * (maximum - minimum)
     if(rounded) return this.round(random)
     else return random
   }
